@@ -1,0 +1,314 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.background {
+    top: 0;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background-color: #9C835F;
+}
+/* -----------------------  logo, navigation, and title ----------------------- */
+a{
+    font-size: 72px;
+    color: #724C21;
+    position: absolute;
+    top: 0%;
+    left:2%;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px;
+
+}
+
+.logo{
+    background-image: url(assets/logo\ 1.png);
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    width: 72px;
+    height: 72px;
+
+}
+
+.title{
+    position: absolute;
+    top: 3%;
+    left: 16%;
+    font-size: 36px;
+    color: #F9B23D;
+    font-weight: bold;
+}
+/* ------------------- player -------------------- */
+
+.player-title{
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    top: 11.5%;
+    left: 25%;
+}
+
+/* .player-hover1{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 16%;
+    left: 23%;    
+    opacity: 0.1;
+}
+
+.player-hover2{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 33%;
+    left: 23%;
+    display: none;
+}
+
+.player-hover3{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 54%;
+    left: 23%;
+    display: none;
+} */
+
+
+
+
+.hand-option.rock img{
+    
+    width: 120px;
+    height: 92px;
+    padding: 40px 40px;
+    border-radius: 30px;
+
+}
+
+.hand-option :hover {
+    background-color: #C4C4C4 ;
+}
+
+/* set background image when the status already clicked */
+.hand-option.active{
+    background-color: #C4C4C4;
+}
+
+.hand-option.rock{
+    
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    border-radius: 30px;
+    position: absolute;
+    top: 16%;
+    left: 23%;
+    cursor: pointer;    
+
+}
+
+
+.hand-option.paper img{
+    width: 115px;
+    height: 150px;
+    padding: 25px 40px ;
+    border-radius: 30px;
+}
+/* .player-paper :hover {
+    background-color: #C4C4C4 ;
+} */
+.hand-option.paper{
+    top: 34%;
+    left: 24%;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.scissor img{
+    width: 134px;
+    height: 160px;
+    padding: 20px 35px ;
+    border-radius: 30px;
+}
+
+/* .player-scissor :hover {
+    background-color: #C4C4C4 ;
+   
+} */
+
+.hand-option.scissor{
+    top: 55%;
+    left: 24%;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+/* --------------- -------------- COM -------------------------------- */
+
+.com-title{
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    top: 11.5%;
+    left: 70%;
+}
+
+/* .com-hover1{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 16%;
+    left: 67%;
+} */
+
+/* .com-hover2{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 33%;
+    left: 67%;
+    display: none;
+}
+
+.com-hover3{
+    width: 200px;
+    height: 180px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    position: absolute;
+    top: 54%;
+    left: 67%;
+    display: none; 
+}*/
+
+/* set the background image when the com value appear */
+.com .active{
+    background-color: #C4C4C4;
+}
+
+.com-rock img{
+    width: 120px;
+    height: 92px;
+    padding: 40px 40px;
+    border-radius: 30px;
+}
+.com-rock{
+    border-radius: 30px;
+    position: absolute;
+    top: 16%;
+    left: 67%;
+}
+
+.com-paper{
+    border-radius: 30px;
+    position: absolute;
+    top: 33%;
+    left: 67%;
+    
+
+}
+
+.com-paper img{
+    width: 115px;
+    height: 150px;
+    padding: 25px 40px ;
+    border-radius: 30px;
+    
+}
+
+.com-scissor{
+    border-radius: 30px;
+    position: absolute;
+    top: 54%;
+    left: 67%;
+}
+.com-scissor img{
+    width: 134px;
+    height: 160px;
+    padding: 20px 35px ;
+    border-radius: 30px;
+}
+
+/* -------------------------- Scoreboard and reset button ------------------------------- */
+
+.result{
+    position: absolute;
+    width: 271px;
+    height: 167px;
+    background-color: #4C9654;
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    padding:  0px;
+    border-radius: 8px;
+    left: 43%;
+    top: 35%;
+    transform: rotate(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: ;
+
+}
+
+
+.reset{
+    width: 77px;
+    height: 71px;
+}
+
+.vs{
+    width: 350px;
+    height: 300px;
+    color: #BD0000;
+    font-size: 144px;
+    font-weight: bold;
+    position: absolute;
+    top: 31%;
+    left: 40%;
+    display: flex;
+    position: absolute;
+    background-color: #9C835F;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.resetlink{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    cursor: pointer;
+}
+
+
+

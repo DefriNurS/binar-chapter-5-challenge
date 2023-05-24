@@ -1,0 +1,1149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', sans-serif;
+}
+
+.header{
+    min-height: 140vh;
+    width: 100%;
+    background-image: url(image/main-bg.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+
+}
+nav{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: #000000;
+    height: 90px;
+    width: 100%;
+    opacity: 1;
+}
+
+a.active,a:hover{
+    background: #f92d2d;
+    transition: .3s;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 990px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+    nav ul li a{
+        
+        padding: 7px 5px;
+        
+        
+    }
+}
+
+@media (max-width: 860px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 25vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+       
+
+    }
+    a:hover,a.active{
+        background: #f92d2d;
+        color: white;
+        border-radius: 10px;
+        
+
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
+label.logo{
+    color: white;
+    font-size: 24px;
+    line-height: 80px;
+    padding: 0 75px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    
+}
+
+.text-box h1{
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.text-box p{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px; 
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;  
+}
+
+.hero-btn{
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #FFB548 ;
+    box-shadow: 3px 3px 8px black;
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 3px;
+    top: 90px;
+
+}
+
+.hero-btn:hover{
+    background: #f44336;
+    transition: 0.4s;
+    color: white;
+}
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 50px;
+    }   
+   
+}
+
+/* ------------------------------------------------- The game ---------------------------------------------------- */
+
+.game{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+    
+.game h1{
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 320px;
+    letter-spacing: 3px;
+    margin: 15px 15px;
+}
+
+.game p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 100px;
+    top: 280px;
+    margin: 10px 10px;
+
+}
+
+.game{
+    min-height: 140vh;
+    width: 100%;
+    background-image: url(image/the-games-bg.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+} 
+
+.gunting .gambar-gunting{
+
+    width: 858px;
+    height: 477px;
+    position: absolute ;
+    top: 340px;
+    right: 129px;
+}
+.gunting .switch-left{
+    position: absolute ;
+    top: 540px;
+    right: 1000px;
+}
+.gunting .switch-right{
+    position: absolute ;
+    top: 540px;
+    right: 100px;
+}
+
+.gunting .screenshot1{
+    position: absolute ;
+    top: 790px;
+    right: 670px;
+}
+.gunting .screenshot2{
+    position: absolute ;
+    top: 790px;
+    right: 610px;
+}
+.gunting .screenshot3{
+    position: absolute ;
+    top: 790px;
+    right: 550px;
+}
+.gunting .screenshot4{
+    position: absolute ;
+    top: 790px;
+    right: 490px;
+}
+.gunting .screenshot5{
+    position: absolute ;
+    top: 790px;
+    right: 440px;
+}
+
+@media (max-width: 810px){
+    .game h1{
+        font-size: 50px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        color: white;
+        position: absolute;
+        letter-spacing: 3px;
+        margin: 15px 15px;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;  
+    }
+    .game p{
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px;
+        color: #fff;
+        margin: 10px 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 3px; 
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;  
+
+    
+    }
+    .gunting .gambar-gunting{
+
+        width: 600px;
+        height: auto;
+        position: absolute ;
+        
+        top: 340px;
+        right: 100px;
+    }
+    .gunting .switch-left{
+        position: absolute ;
+        top: 470px;
+        right: 720px;
+    }
+    .gunting .switch-right{
+        position: absolute ;
+        top: 470px;
+        right: 60px;
+    }
+    
+    .gunting .screenshot1{
+        position: absolute ;
+        width: 10px;
+        height: auto;
+        top: 610px;
+        right: 490px;
+    }
+    .gunting .screenshot2{
+        position: absolute ;
+        width: 10px;
+        height: auto;
+        top: 610px;
+        right: 460px;
+    }
+    .gunting .screenshot3{
+        position: absolute ;
+        width: 10px;
+        height: auto;
+        top: 610px;
+        right: 430px;
+    }
+    .gunting .screenshot4{
+        position: absolute ;
+        width: 10px;
+        height: auto;
+        top: 610px;
+        right: 400px;
+    }
+    .gunting .screenshot5{
+        position: absolute ;
+        width: 10px;
+        height: auto;
+        top: 610px;
+        right: 370px;
+    }
+}
+
+@media (max-width: 480px){
+    .game h1{
+        font-size: 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400px;
+        color: white;
+        position: absolute;
+        letter-spacing: 3px;
+        margin: 5px 5px;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;  
+    }
+    .game p{
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px;
+        color: #fff;
+        margin: 10px 10px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 3px;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;  
+
+    
+    }
+    .gunting .gambar-gunting{
+
+        width: 400px;
+        height: auto;
+        position: absolute ;
+        
+        top: 390px;
+        right: 40px;
+    }
+    .gunting .switch-left{
+        position: absolute ;
+        width: 15px;
+        height: auto;
+        top: 470px;
+        right: 450px;
+    }
+    .gunting .switch-right{
+        position: absolute ;
+        width: 15px;
+        height: auto;
+        top: 470px;
+        right: 17px;
+    }
+    
+    .gunting .screenshot1{
+        position: absolute ;
+        width: 7px;
+        height: auto;
+        top: 570px;
+        right: 300px;
+    }
+    .gunting .screenshot2{
+        position: absolute ;
+        width: 7px;
+        height: auto;
+        top: 570px;
+        right: 270px;
+    }
+    .gunting .screenshot3{
+        position: absolute ;
+        width: 7px;
+        height: auto;
+        top: 570px;
+        right: 240px;
+    }
+    .gunting .screenshot4{
+        position: absolute ;
+        width: 7px;
+        height: auto;
+        top: 570px;
+        right: 210px;
+    }
+    .gunting .screenshot5{
+        position: absolute ;
+        width: 7px;
+        height: auto;
+        top: 570px;
+        right: 180px;
+    }
+}
+
+/* ---------------------------------------------- feature --------------------------------------------------------- */
+
+.feature{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 140vh;
+    width: 100%;
+    background-image: url(image/features.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}   
+
+
+ .feature .item1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 58%;
+ }
+ .feature .item2 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 29%;
+    left: 58%;
+ }
+
+ .feature .item3 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: #FFB548;
+    position: absolute;
+    top: 49%;
+    left: 62%;
+ }
+ .feature .item4 {
+    font-size: 20px;
+    
+    letter-spacing: 3px;
+    color: #fff;
+    position: absolute;
+    top: 53%;
+    left: 62%;
+    text-align: left;
+ }
+
+ .feature .item5 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: #FFB548;
+    position: absolute;
+    top: 63%;
+    left: 62%;
+ }
+ .feature .item6 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: #FFB548;
+    position: absolute;
+    top: 71%;
+    left: 62%;
+ }
+.feature .item7{
+    position: absolute;
+    top: 50%;
+    left: 56%;
+}
+.feature .item8{
+    position: absolute;
+    top: 64%;
+    left: 56%;
+}
+.feature .item9{
+    position: absolute;
+    top: 72%;
+    left: 56%;
+}
+.feature .item10{
+    position: absolute;
+    top: 51%;
+    left: 56.5%;
+}
+@media (max-width: 810px){
+    .feature .item2 {
+        font-size: 60px;
+        top: 30%;
+        left: 40%;
+     }
+     .feature .item1 {
+        font-size: 26px;
+        top: 27%;
+        left: 40%;
+     }
+     .feature .item3 {
+        font-size: 24px;
+        top: 40%;
+        left: 47%;
+     }
+     .feature .item4 {
+        font-size: 15px;
+        width: 300px;
+        top: 43%;
+        left: 47%;
+     }
+     .feature .item5 {
+        font-size: 24px;
+        top: 48.5%;
+        left: 47%;
+     }
+     .feature .item6 {
+        font-size: 24px;
+        top: 51%;
+        left: 47%;
+     }
+     .feature .item7, .item8, .item9, .item10{
+        display: none;
+    }
+}
+
+/* -------------------------------------- system requirement -------------------------------------------- */
+
+.syst-req{
+    background-image: url(image/requirements.png);
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 140vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.syst-header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    width: 300px;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    
+}
+
+.syst-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    
+}
+
+.syst-box{
+    width: 600px;
+    height: 420px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    top: 388px;
+    left: 121px;
+    opacity: 0.7;
+}
+
+.syst-line1{
+    width: 600px;
+    position: absolute;
+    border: 1px solid white;
+    left: 121px;
+    top: 530px;
+    opacity: 0.7;
+}
+.syst-line2{
+    width: 600px;
+    position: absolute;
+    border: 1px solid white;
+    left: 121px;
+    top: 670px;
+    opacity: 0.7;
+}
+.syst-line3{
+    height: 280px;
+    position: absolute;
+    border: 1px solid white;
+    left: 420px;
+    top: 389px;
+    opacity: 0.7;
+}
+
+
+.syst-boxhall{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #FFB548;
+
+}
+.syst-boxh1{
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    
+}
+.syst-boxh2{
+    position: absolute;
+    top: 400px;
+    left: 440px;
+}
+.syst-boxh3{
+    position: absolute;
+    top: 550px;
+    left: 150px;
+}
+.syst-boxh4{
+    position: absolute;
+    top: 550px;
+    left: 440px;
+}
+.syst-boxh5{
+    position: absolute;
+    top: 690px;
+    left: 150px;
+}
+
+.syst-boxp1{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 430px ;
+    line-height: 35px;
+    left: 130px;
+    width: 330px;
+    text-align: left;
+}
+.syst-boxp2{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 430px ;
+    line-height: 35px;
+    left: 430px;
+    width: 330px;
+    text-align: left;
+}
+.syst-boxp3{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 600px ;
+    line-height: 35px;
+    left: 150px;
+    width: 330px;
+    text-align: left;
+}
+.syst-boxp4{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 600px ;
+    line-height: 35px;
+    left: 440px;
+    width: 330px;
+    text-align: left;
+}
+.syst-boxp5{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 730px ;
+    line-height: 25px;
+    left: 150px;
+    width: 500px;
+    text-align: left;
+}
+
+@media (max-width: 910px){
+    .syst-text{
+        left: 35%;
+    }
+}
+@media (max-width: 730px){
+    .syst-header{
+        font-size: 50px;
+        top: 15%;
+        left: 44%;
+        text-align: left;
+        transform: translate(-50%,-50%);
+     
+        
+    }
+}
+
+/* --------------------------------- top scores ----------------------------------------- */
+
+.topscores{
+    background-image: url(image/top-score-bg.png);
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 140vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+}
+.topscores .item1{
+    font-size: 56px;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    top: 340px ;
+    left: 118px;
+    line-height: 35px;
+    text-align: left;   
+}
+.topscores .item2{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 426px ;
+    left: 121px;
+    line-height: auto;
+    text-align: left;   
+}
+.scoreitem3{
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: #FFB548 ;
+    box-shadow: 3px 3px 8px black;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 4px;
+    top: 523px;
+    left: 118.58px;
+
+}
+.scoreitem3:hover{
+    background: #f44336;
+    transition: 0.4s;
+    color: white;
+}
+
+.scorebox1{
+    width: 453px;
+    height: 183px;
+    background-color: #1e1f20;
+    position: relative;
+    border-radius: 10px;
+    top: -900px;
+    left: 868px;
+}
+.scorebox1 .image{
+    background-image: url(image/evan-lahti.jpg);
+    display: inline;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 22px;
+    top: 15px;
+    border-radius: 65px;
+    box-shadow: 6px 5px 0px #FFB548;
+}
+.scorebox1 .name{
+    color: #FFB548;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    top: 26px;
+    left:  109px;
+    position: absolute;
+}
+.scorebox1 .work-place{
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    top: 103px;
+    left: 17px;
+    position: absolute;
+}
+.scorebox1 .quote{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    top: 50px;
+    left: 109px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox1 .date{
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    top: 141px;
+    left: 17px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox1 .twitter{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 414px;
+    opacity: 0.3;
+}
+
+.scorebox2{
+    width: 453px;
+    height: 183px;
+    background-color: #1e1f20;
+    position: relative;
+    border-radius: 10px;
+    top: -870px;
+    left: 723px;
+}
+.scorebox2 .image{
+    background-image: url(image/jada-griffin.jpg);
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 22px;
+    top: 15px;
+    border-radius: 65px;
+    box-shadow: 6px 5px 0px #FFB548;
+}
+.scorebox2 .name{
+    color: #FFB548;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    top: 26px;
+    left:  109px;
+    position: absolute;
+}
+.scorebox2 .quote{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    top: 50px;
+    left: 109px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox2 .work-place{
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    top: 96px;
+    left: 17px;
+    position: absolute;
+}
+.scorebox2 .date{
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    top: 141px;
+    left: 17px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox2 .twitter{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 414px;
+    opacity: 0.3;
+}
+
+.scorebox3{
+    width: 453px;
+    height: 183px;
+    background-color: #1e1f20;
+    position: relative;
+    border-radius: 10px;
+    top: -830px;
+    left: 929px;
+}
+.scorebox3 .image{
+    background-image: url(image/aaron-williams.jpg);
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 22px;
+    top: 15px;
+    border-radius: 65px;
+    box-shadow: 6px 5px 0px #FFB548;
+}
+.scorebox3 .name{
+    color: #FFB548;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    top: 26px;
+    left:  109px;
+    position: absolute;
+}
+.scorebox3 .quote{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    top: 50px;
+    left: 109px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox3 .work-place{
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    top: 96px;
+    left: 17px;
+    position: absolute;
+}
+.scorebox3 .date{
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    top: 141px;
+    left: 17px;
+    position: absolute;
+    opacity: 0.5;
+}
+.scorebox3 .twitter{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 414px;
+    opacity: 0.3;
+}
+@media (max-width: 1380px){
+    .scorebox1{
+        left: 700px;
+    }
+    .scorebox2{
+        left: 623px;
+    }
+    .scorebox3{
+        left: 729px;
+    }
+}
+@media (max-width: 1170px){
+    .scorebox1{
+        left: 500px;
+    }
+    .scorebox2{
+        left: 423px;
+    }
+    .scorebox3{
+        left: 529px;
+    }
+}
+@media (max-width: 810px){
+    .scorebox1{
+        left: 100px;
+    }
+    .scorebox2{
+        left: 23px;
+    }
+    .scorebox3{
+        left: 129px;
+    }
+}
+
+/* ----------------------------------------------- newletter -------------------------------------------------- */
+.newsletter{
+    background-image: url(image/newsletter.png);
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 140vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    top: -550px;
+}
+.newsletter .gambar{
+    position: absolute;
+    height: 694px;
+    width: 445px;
+    top: 50px;
+    left: 160px;
+    border-radius: 50px;
+}
+.newsletter .p1{
+    width: 240px;
+    height: 28px;
+    font-size: 24px;
+    color: white;
+    line-height: 27px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 136px;
+    left: 650px;
+
+}
+.newsletter .h1{
+    width: 677px;
+    height: 76px;
+    font-size: 65px;
+    color: white;
+    line-height: 74px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 213px;
+    left: 510px;
+
+}
+.newsletter .p2{
+    width: 644px;
+    height: 136px;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 378px;
+    left: 675px;
+    text-align: left;
+
+}
+
+@media (max-width: 810px){
+    .newsletter .p1{
+        width: 240px;
+        height: 28px;
+        font-size: 20px;
+        color: white;
+        line-height: 27px;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 136px;
+        left: 80px;
+    
+    }
+    .newsletter .h1{
+        width: 677px;
+        height: 76px;
+        font-size: 50px;
+        color: white;
+        line-height: 74px;
+        letter-spacing: 3px;
+        position: absolute;
+        top: 213px;
+        left: 40px;
+    
+    }
+    .newsletter .p2{
+        width: 500px;
+        height: auto;
+        font-size: 15px;
+        color: white;
+        line-height: 22px;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 378px;
+        left: 100px;
+        text-align: left;
+    
+    }
+}   
